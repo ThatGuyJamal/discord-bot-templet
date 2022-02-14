@@ -1,0 +1,9 @@
+node_modules
+
+# server
+.env
+out
+
+# client
+/.cache
+build
