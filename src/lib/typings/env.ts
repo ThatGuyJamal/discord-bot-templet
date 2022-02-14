@@ -10,6 +10,8 @@ export interface env_types {
     register_commands: boolean;
   };
   database: {
+    useDefault: boolean;
+    dev: boolean;
     connection_url: string;
   };
   developer: {

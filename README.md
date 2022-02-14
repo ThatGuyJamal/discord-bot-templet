@@ -56,7 +56,20 @@ bot: {
 
 After filling out these options, the bot will come online.
 
-## Support
+### Database
+
+In this bot example, the database I use is [mongodb](https://www.mongodb.com/). Feel free to use anyone you wish with the bot and implement it.
+I also build a simple handler for the Guild settings config that can store a prefix and language config.
+
+*If you want to disable the default database simply set the config to false:*
+```ts
+database: {
+  useDefault: true,
+  // other options here
+}
+```
+
+## Additional Support
 
 While this template is not meant to be a full-featured bot, it is meant to be a starting point for creating a bot. If you need support or someting is outdated, please join
 the [support server.](https://discord.com/invite/N79DZsm3m2)

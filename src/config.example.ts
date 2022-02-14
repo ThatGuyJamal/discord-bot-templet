@@ -13,6 +13,8 @@ export const ENV: env_types = {
     register_commands: true,
   },
   database: {
+    useDefault: true,
+    dev: true,
     connection_url: "",
   },
   developer: {
