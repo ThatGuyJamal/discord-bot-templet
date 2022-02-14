@@ -7,6 +7,7 @@ class coreBotClient extends SapphireClient {
   }
 
   public async startClient(): Promise<void> {
+    this.validateEnviroment();
     await this.login(ENV.bot.token);
   }
 
@@ -15,6 +16,22 @@ class coreBotClient extends SapphireClient {
     this.logger.warn("Destroying node process...");
     super.destroy();
     process.exit(0);
+  }
+
+  /**
+   * Checks to make sure you have filled out the required enviroment variables
+   * @private
+   */
+  validateEnviroment(): void {
+    if (!ENV.bot.token) {
+      throw new Error(
+        "No bot token provided. Please fill out the ENV.bot.token variable in the config.ts file."
+      );
+    } else if (!ENV.bot.test_guild_id || ENV.bot.test_guild_id.length !== 18) {
+      throw new Error(
+        "No test guild id provided. Please fill out the ENV.bot.test_guild_id variable in the config.ts file."
+      );
+    }
   }
 }
 

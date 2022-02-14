@@ -7,6 +7,7 @@ export interface env_types {
     prefix: string;
     token: string;
     test_guild_id: string;
+    register_commands: boolean;
   };
   database: {
     connection_url: string;

@@ -1,9 +1,10 @@
+# Node
 node_modules
 
-# server
-.env
+# Build Files
+
 out
 
-# client
-/.cache
-build
+# env
+
+config.ts

@@ -1,7 +1,7 @@
 import {
+  Args,
   Command as SapphireCommand,
-  type Args,
-  type Piece,
+  Piece,
   UserError,
 } from "@sapphire/framework";
 import { PermissionFlagsBits } from "discord-api-types/v9";

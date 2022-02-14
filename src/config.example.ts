@@ -10,6 +10,7 @@ export const ENV: env_types = {
     prefix: "",
     dev: true,
     test_guild_id: "",
+    register_commands: true,
   },
   database: {
     connection_url: "",

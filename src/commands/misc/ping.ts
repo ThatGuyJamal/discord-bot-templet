@@ -23,11 +23,10 @@ import ms from "ms";
   runIn: "GUILD_TEXT",
   nsfw: false,
   chatInputCommand: {
-    register: true,
+    register: ENV.bot.register_commands,
     guildIds: [ENV.bot.test_guild_id],
     behaviorWhenNotIdentical: RegisterBehavior.Overwrite,
-    // replace this id with your own command id
-    idHints: ["942650853066690560"],
+    idHints: [],
   },
 })
 export class UserCommand extends ICommand {
@@ -70,17 +69,17 @@ export class UserCommand extends ICommand {
    * @param registry
    */
   public override registerApplicationCommands(
-      registry: ApplicationCommandRegistry
+    registry: ApplicationCommandRegistry
   ) {
     registry.registerChatInputCommand(
-        {
-          name: this.name,
-          description: this.description,
-        },
-        {
-          registerCommandIfMissing: true,
-          behaviorWhenNotIdentical: RegisterBehavior.Overwrite,
-        }
+      {
+        name: this.name,
+        description: this.description,
+      },
+      {
+        registerCommandIfMissing: ENV.bot.register_commands,
+        behaviorWhenNotIdentical: RegisterBehavior.Overwrite,
+      }
     );
   }
 }
