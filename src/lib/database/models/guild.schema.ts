@@ -8,7 +8,7 @@ import {
 @modelOptions({
   schemaOptions: {
     id: false,
-    collection: "rpg-guild-collection",
+    collection: "bot-guild-collection",
   },
   options: {
     allowMixed: Severity.ALLOW,
