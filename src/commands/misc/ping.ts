@@ -16,7 +16,7 @@ import ms from "ms";
 @ApplyOptions<SubCommandPluginCommandOptions>({
   description: "Check the bot latency with discords api.",
   detailedDescription:
-    "Returns helpful and quick statistics on the bot latency and uptime.",
+    "Returns helpful and quick statistics on the bot latency.",
   cooldownDelay: seconds(5),
   cooldownScope: BucketScope.User,
   cooldownLimit: 2,
