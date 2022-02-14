@@ -32,7 +32,6 @@ export const CLIENT_OPTIONS: ClientOptions = {
   logger: {
     level: ENV.bot.dev ? LogLevel.Debug : LogLevel.Warn,
   },
-  regexPrefix: /^(hey +)?yoru[,! ]/i,
   intents: ["GUILDS", "GUILD_MEMBERS"],
   loadDefaultErrorListeners: true,
   loadMessageCommandListeners: true,
