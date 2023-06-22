@@ -30,7 +30,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@sapphire/decorators": "^4.2.3",
+    "@sapphire/decorators": "^6.0.0",
     "@sapphire/framework": "^3.0.0-next.73cfe9f.0",
     "@sapphire/plugin-hmr": "^1.1.1",
     "@sapphire/plugin-i18next": "^2.2.3",
