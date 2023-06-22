@@ -166,10 +166,10 @@
     "@sapphire/utilities" "^3.1.0"
     tslib "^2.3.1"
 
-"@sapphire/plugin-hmr@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/plugin-hmr/-/plugin-hmr-1.1.1.tgz#81a8487444c8ee3efd9c24c925adc36c8822ce60"
-  integrity sha512-RScuY2vCLwVfSKEweZn5M+Vfpp4UGPufCEj06lxP7Ma2Dw0G+Iqpz5mdwNhiVk6TrOrpUHUd2tZJL9BnCEQifw==
+"@sapphire/plugin-hmr@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-hmr/-/plugin-hmr-2.0.0.tgz#3b58f642bc836f8c38fedb80569d6ae4bfee3c06"
+  integrity sha512-lJy+QzHHRlCjdEhqnol6xDApTVQsLiOuEKg6hTVwC+Ldc6LrOtnQPPYxBcbPmGTGj08/MEv+f47HA8kv+TsTKQ==
   dependencies:
     chokidar "^3.5.3"
     tslib "2.x"
